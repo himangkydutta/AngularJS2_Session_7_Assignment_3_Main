@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <h1>Displaying the Details of {{ EntityName }}</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let colName of gridColumns">
+                                    {{ colName }}
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let colObj of gridData">
+                                <td *ngFor="let colName of gridColumns">
+                                    {{ colObj[colName] }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- /.col-xs-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+<hr/>

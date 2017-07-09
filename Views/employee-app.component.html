@@ -1,0 +1,31 @@
+<!--Array of objects-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>    
+                    <table border="1" cellpadding="10" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Index</th>
+                                <th>Name</th>
+                                <th>Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let emp of employees; let i=index">
+                                <td appMyHighlighter>{{i+1}}</td>
+                                <td>{{ emp.name }}</td>
+                                <td>{{ emp.color }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- /.col-xs-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
