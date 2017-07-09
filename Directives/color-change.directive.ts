@@ -39,6 +39,6 @@ export class MyHighlighterDirective {
   }
 
   private highlight(color: string) {
-    this.el.nativeElement.style.color = color;
+    this.el.nativeElement.style.backgroundColor = color;
   }
 }
